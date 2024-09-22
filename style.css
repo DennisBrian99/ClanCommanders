@@ -1,0 +1,301 @@
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #eaeaea; /* Hellgrau für den Hintergrund */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header-Stil */
+header {
+    background: url('https://supercell.com/images/4c0ab0c1fb2958e72103f81632fee096/og_clashofclans.f3149338.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dunkleres Overlay */
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+header .btn {
+    padding: 10px 40px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #e6b800;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+header .btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Features Abschnitt */
+#features {
+    padding: 60px 0;
+    background-color: #fff; /* Heller Hintergrund */
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #f9f9f9; /* Heller Hintergrund für Features */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 15px; /* Abstand zwischen den Features */
+    flex-basis: 22%; /* Anpassung für 4 Spalten */
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Hover-Effekt */
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 10px; /* Abgerundete Ecken für Bilder */
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.feature p {
+    color: #666;
+    font-size: 1em;
+}
+
+
+/* Über Uns Abschnitt */
+#about {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Heller Hintergrund für den Abschnitt */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-features {
+    margin-top: 30px; /* Mehr Abstand zwischen den Abschnitten */
+}
+
+.about-features h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    margin: 10px; /* Abstand zwischen den Features */
+    flex-basis: 22%; /* Anpassung für 4 Spalten */
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Hover-Effekt */
+}
+
+.feature strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ffcc00; /* Akzentfarbe */
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0; /* Abstand zum vorherigen Element */
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Einheitlicher Testimonial-Stil */
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+/* Abschnittsüberschriften */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* FAQ Abschnitt */
+#faq {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Testimonials Abschnitt */
+#testimonials {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Screenshots Abschnitt */
+#screenshots {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.screenshot-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Call-to-Action Abschnitt */
+#download {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #ffcc00, #e6b800); /* Schöne Farbabstufung für den Hintergrund */
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 40px 0;
+}
+
+#download h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #fff; /* Weiße Schriftfarbe für besseren Kontrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#download p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f9f9f9;
+}
+
+.btn2 {
+    padding: 15px 40px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50px; /* Abgerundeter Button */
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #e3e3e3; /* Hover-Effekt mit farblicher Umkehrung */
+    color: #000000;
+    transform: translateY(-3px); /* Leichtes Anheben bei Hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Intensivierender Schatten bei Hover */
+}
+
+
+/* Footer Abschnitt */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .social-link {
+    margin: 0 10px;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer .social-link:hover {
+    text-decoration: underline;
+}
